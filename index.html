@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        background-color: black;
+        font-family: "Reddit Sans Condensed", sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+      }
+      h1 {
+        color: #db8616;
+        text-align: center;
+      }
+      h1:hover{
+        cursor: pointer;
+      }
+      h2 {
+        color: white;
+        font-size: 20px;
+      }
+      h2:hover {
+        color: #db8616;
+        cursor: pointer;
+      }
+      h3 {
+        color: white;
+        text-align: center;
+        font-weight: 700;
+      }
+      span{
+        color: #db8616;
+        font-size: 30px;
+      }
+      p {
+        color: white;
+        text-align: justify;
+      }
+      i {
+        color: white;
+      }
+      .main-container {
+        border: 1px solid #2d2f0f;
+        max-width: 1000px;
+        margin: auto;
+        padding: 0px 20px;
+      }
+      .logo-container img {
+        width: 90px;
+      }
+      .logo-container:hover {
+        cursor: pointer;
+      }
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px;
+        background: linear-gradient(to bottom, rgb(13, 12, 12), black);
+      }
+      .content-container {
+        display: flex;
+        gap: 20px;
+      }
+      .img-container img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      img:hover{
+        cursor: pointer;
+      }
+      .text-container:hover{
+        cursor: pointer;
+      }
+      .datetime {
+        display: flex;
+        justify-content: space-between;
+      }
+      .date,
+      .location {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .ticket-container{
+        margin-top: 100px;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .ticket{
+        color:#db8616;
+        font-size: 23px;
+      }
+      .ticket-type{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #2d2f0f;
+        margin-bottom: 50px;
+      }
+      .ticket-type p{
+        text-align: center;
+      }
+      .ticket-type:hover{
+        cursor: pointer;
+      }
+      button{
+        font-weight: 700;
+        background-color:#db8616;
+        width: 120px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      button:hover{
+        background-color: white;
+        color: #db8616;
+        cursor: pointer;
+      }
+      .full-schedule{
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+      }
+      .full-schedule p:hover{
+        color: #db8616;
+        cursor: pointer;
+      }
+      .full-schedule p{
+        text-decoration: underline;
+        text-decoration-color:#db8616;
+        text-align: center;
+        text-underline-offset: 5px;
+      }
+      .full-schedule span{
+        color: #db8616;
+        font-size: 20px;
+      }
+      @media (max-width:1200px){
+        .img-container{
+          width: 2000px;
+        }
+      }
+      @media (max-width:915px){
+        .img-container{
+          display: flex;
+          width: 50%;
+          justify-content: center; 
+          align-items: center; 
+          margin: 0 auto; 
+        }
+        .content-container{
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 498px){
+        .logo-container{
+          display: none;
+        }
+        .datetime{
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 390px){
+        h2{
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-container">
+      <h1>HOME</h1>
+    </div>
+    <div class="main-container">
+      <div class="nav-container">
+        <div class="logo-container">
+          <img src="s-l1200-removebg-preview.png" alt="logo" />
+        </div>
+        <h2>TOUR</h2>
+        <h2>MUSIC</h2>
+        <h2>VIDEO</h2>
+        <h2>GALLERY</h2>
+        <h2>MERCH</h2>
+        <h2>BID</h2>
+      </div>
+      <div class="content-container">
+        <div class="img-container">
+          <img src="https://images.alphacoders.com/126/1266804.png" alt="" />
+        </div>
+        <div class="text-container">
+          <div class="text-1">
+            <h3>BIO</h3>
+            <p>
+              My Chemical Romance is an American rock band from New Jersey. The
+              band's current lineup consists of lead vocalist Gerard Way, lead
+              guitarist Ray Toro, rhythm guitarist Frank Iero, and bassist Mikey
+              Way. They are considered one of the most influential rock groups
+              of the 2000s and a major act in the pop-punk and emo genres,
+              despite the band rejecting the latter label.
+            </p>
+          </div>
+          <div class="text-2"></div>
+          <h3>NEXT SHOW</h3>
+          <div class="datetime">
+            <div class="date">
+              <i class="fa-solid fa-clock"></i>
+              <p>25 February 2024 at 19.00PM</p>
+            </div>
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Gelora Bung Karno Stadium, Jakarta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-container">
+        <h1 class="ticket">TOUR</h1>
+        <div class="ticket-type">
+            <p><span>15</span> March</p>
+            <p>Washington DC, USA</p>
+            <button>Tickets</button>
+        </div>
+        <div class="ticket-type">
+            <p><span>29</span> March</p>
+            <p>Manila, Philliphines</p>
+            <button>Tickets</button>
+        </div>
+        <div class="ticket-type">
+            <p><span>22</span> April</p>
+            <p>Kuala Lumpur, Malaysia</p>
+            <button>Tickets</button>
+        </div>
+        <div class="full-schedule">
+            <p class="full-schedule">Full Schedule <span>>></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
